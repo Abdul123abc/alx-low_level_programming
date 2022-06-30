@@ -1,7 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
+<<<<<<< HEAD
  *  *  * main - Entry point
  *   *   *
+*
 */
 int main(void)
 {

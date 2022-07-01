@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h>
+git pull#include <unistd.h>
 /**
  * main - Entry point
  * Description: prints numbers from 0 to 9\n
@@ -12,5 +12,6 @@ int i;
 	{
 	printf("%d", i);
 	}
+	putchar('\n');
 	return (0);
 }

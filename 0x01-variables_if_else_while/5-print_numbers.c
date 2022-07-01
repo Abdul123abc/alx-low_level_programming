@@ -1,5 +1,5 @@
 #include <stdio.h>
-git pull#include <unistd.h>
+#include <unistd.h>
 /**
  * main - Entry point
  * Description: prints numbers from 0 to 9\n

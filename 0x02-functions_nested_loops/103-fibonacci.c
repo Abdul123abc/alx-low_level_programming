@@ -1,16 +1,23 @@
+#include <stdio.h>
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * main - main block
+ * Description: computes and prints even  number < 4,000,000
+ * 5 below 1024 (excluded), followed by a new line
+ * Return: 0
  */
 int main(void)
 {
-    print_times_table(3);
-    _putchar('\n');
-    print_times_table(5);
-    _putchar('\n');
-    print_times_table(98);
-    _putchar('\n');
-    print_times_table(12);  
-    return (0);
+	int a = 0, b = 1, next = 0;
+	int sum = 0;
+
+	while (next < 4000000)
+	{
+		next = a + b;
+		a = b;
+		b = next;
+		if (next % 2 == 0)
+			sum += next;
+	}
+	printf("%i\n", sum);
+	return (0);
 }

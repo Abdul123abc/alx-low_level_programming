@@ -1,24 +1,18 @@
 #include "main.h"
 
 /**
- * _isalpha - Entry point
- * Description: checks is a character is lowercase or uppercase
- * @c: the integer value it receives
+ * print_last_digit - Entry point
+ * Description: print last digit of an integer
+ * @n: the integer value it receives
  * Return: 1 if true. 0 if false.
  */
-int _isalpha(int c)
+int print_last_digit(int n)
 {
-int i = 'a';
-int I = 'A';
-for (i = 'a'; i <= 'z'; i++)
+int a = n % 10;
+if (n < 0)
 {
-if (i == c)
-return (1);
+a = a * -1;
 }
-for (I = 'A'; I <= 'Z'; I++)
-{
-if (c == I)
-return (1);
-}
-return (0);
+_putchar(a + '0');
+return (a);
 }

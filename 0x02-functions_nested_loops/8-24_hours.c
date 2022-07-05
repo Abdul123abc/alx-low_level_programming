@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _isalpha - Entry point
- * Description: checks is a character is lowercase or uppercase
- * @c: the integer value it receives
- * Return: 1 if true. 0 if false.
+ * jack_bauer - Entry point
+ * Description: prints all the second in a day
+ * Return: it returns nothing
  */
 void jack_bauer(void)
 {
 	int a, b, c, d;
+
 	for (a = '0'; a < '3'; a++)
 	{
 		for (b = '0'; b <= '9'; b++)

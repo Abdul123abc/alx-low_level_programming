@@ -6,19 +6,27 @@
  * @c: the integer value it receives
  * Return: 1 if true. 0 if false.
  */
-int _isalpha(int c)
+void jack_bauer(void)
 {
-int i = 'a';
-int I = 'A';
-for (i = 'a'; i <= 'z'; i++)
-{
-if (i == c)
-return (1);
-}
-for (I = 'A'; I <= 'Z'; I++)
-{
-if (c == I)
-return (1);
-}
-return (0);
+	int a, b, c, d;
+	for (a = '0'; a < '3'; a++)
+	{
+		for (b = '0'; b <= '9'; b++)
+		{
+			for (c = '0'; c < '6'; c++)
+			{
+				for (d = '0'; d <= '9'; d++)
+				{
+					if (a >= 50 && b >= 52)
+						break;
+					_putchar(a);
+					_putchar(b);
+					_putchar(':');
+					_putchar(c);
+					_putchar(d);
+					_putchar('\n');
+				}
+			}
+		}
+	}
 }

@@ -1,12 +1,32 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * main - check the code
- *
+ * print_to_98 - check the code
+ *@n: the integer value it receives
  * Return: Always 0.
  */
-int main(void)
+void print_to_98(int n)
 {
-    times_table();
-    return (0);
+if (n <= 98)
+{
+int i;
+i = n;
+while (i < 98)
+{
+printf("%d, ", i);
+i++;
+}
+}
+else
+{
+int i;
+i = n;
+while (i > 98)
+{
+printf("%d, ", i);
+i--;
+}
+}
+printf("98\n");
 }

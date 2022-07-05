@@ -1,24 +1,24 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _isalpha - Entry point
- * Description: checks is a character is lowercase or uppercase
- * @c: the integer value it receives
- * Return: 1 if true. 0 if false.
+ * _abs - Entry point
+ * Description: prints the absolute value of a number
+ * Return: 0
  */
-int _isalpha(int c)
+int _abs(int n)
 {
-int i = 'a';
-int I = 'A';
-for (i = 'a'; i <= 'z'; i++)
+
+if (n > 0)
 {
-if (i == c)
-return (1);
-}
-for (I = 'A'; I <= 'Z'; I++)
-{
-if (c == I)
-return (1);
-}
-return (0);
+		return (n);
+	}
+	else if (n < 0)
+	{
+		return (-n);
+	}
+	else
+	{
+		return (n);
+	}
 }
